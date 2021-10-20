@@ -1,0 +1,505 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+html:hover {
+  cursor: default;
+}
+header {
+  background-color: rgb(11, 9, 29);
+  width: 100%;
+  height: 5%;
+  color: white;
+  padding: 15px 20px;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  position: relative;
+}
+header i {
+  margin-left: 10px;
+  transition: 1s;
+}
+header i:hover {
+  cursor: pointer;
+}
+header i:hover {
+  opacity: 0.6;
+}
+.headertxt {
+  display: inline-block;
+  margin-left: 10px;
+  cursor: default;
+  transition: 1s;
+}
+.sisikiri {
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.sisikiri span {
+  color: rgb(245, 181, 62);
+  transition: 1s;
+}
+
+.headertxt:hover {
+  color: rgb(245, 181, 62);
+  cursor: default;
+}
+.sisikiri span:hover {
+  color: white;
+  cursor: default;
+}
+.sisikanan h4 {
+  font-weight: 400;
+  font-style: italic;
+  cursor: default;
+}
+.sisikanan h4:hover {
+  color: aquamarine;
+  opacity: 0.8;
+}
+.midcontainer {
+  width: 100%;
+  position: relative;
+}
+nav {
+  width: 25%;
+  background-color: rgb(245, 181, 62);
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  float: left;
+  padding: 15px;
+  justify-content: center;
+}
+nav i,
+span,
+a {
+  text-decoration: none;
+  color: rgb(37, 35, 35);
+  text-align: center;
+}
+.imgpf {
+  text-align: center;
+  padding: 10px;
+}
+
+.imgpf h4 {
+  cursor: default;
+}
+.imgpf img {
+  text-align: center;
+  padding: 5px;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+.imgpf img:hover {
+  cursor: pointer;
+}
+.imgpf h4 {
+  color: rgb(37, 35, 35);
+  padding: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Satisfy", cursive;
+}
+.imgpf h4 span {
+  color: white;
+  font-family: "Satisfy", cursive;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 25px;
+  margin: 10px 0px 10px 0px;
+  position: relative;
+  justify-content: center;
+}
+nav ul li {
+  margin: 10px;
+  padding: 15px 5px 15px 5px;
+  font-size: 20px;
+  transition: 1s;
+  width: 90%;
+  text-align: center;
+  background-color: rgb(66, 61, 61);
+  border-radius: 10px;
+}
+
+nav ul li a span {
+  color: white;
+}
+nav ul li a i {
+  color: white;
+}
+nav ul li:hover {
+  background-color: rgb(100, 97, 92);
+}
+/*end of nav*/
+article {
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+  background-size: cover;
+  float: left;
+  padding: 40px;
+}
+article h3 {
+  font-weight: 500;
+  font-style: italic;
+}
+article h2 {
+  font-weight: 600;
+}
+article h2,
+img:hover {
+  cursor: pointer;
+}
+article p {
+  font-weight: 500;
+  font-size: 0.8em;
+  padding: 10px 0px 10px 0px;
+}
+article p span {
+  font-weight: 400;
+  font-size: 12px;
+  font-style: italic;
+  cursor: pointer;
+  transition: 1s;
+  padding: 2px;
+}
+article p span:hover {
+  background-color: rgb(231, 227, 227);
+  border-radius: 8px;
+  font-size: 10px;
+  padding: 5px;
+}
+article img {
+  margin: 20px 0px 20px 0px;
+  width: 50%;
+}
+
+footer {
+  position: static;
+  bottom: 0px;
+  justify-content: center;
+  height: 10%;
+  background-color: rgb(11, 9, 29);
+  width: 100%;
+  padding: 25px;
+  display: flex;
+}
+footer h4 {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  transition: 0.5s;
+}
+footer h4:hover {
+  opacity: 0.5;
+}
+aside {
+  width: 25%;
+  background-color: #eba92f;
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  padding: 25px;
+  float: left;
+}
+aside h3 {
+  padding: 10px 0px 10px 0px;
+  font-weight: 600;
+  color: rgb(37, 35, 35);
+}
+
+.articleaside {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  padding-left: 0px;
+}
+.headingarticleaside {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.paragrafside {
+  font-weight: 500;
+  color: rgb(37, 35, 35);
+  padding: 10px;
+  padding-left: 0px;
+  font-size: 1em;
+}
+.seemore {
+  font-weight: 400;
+  font-size: 12px;
+  font-style: italic;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 2px;
+}
+.seemore:hover {
+  background-color: rgb(105, 84, 16);
+  border-radius: 8px;
+  font-size: 10px;
+  padding: 5px;
+  color: white;
+  margin-left: 5px;
+}
+#asidehead {
+  background-color: #f2f2f3;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*------------------------------------------*/
+/*--------Responsive Breakpoint-------*/
+
+/*--------Responsive Phone Portrait Version-------*/
+@media screen and (max-width: 768px) and (min-width: 214px) {
+  .sisikanan h4 {
+    display: none;
+  }
+
+  .midcontainer {
+    width: 100%;
+    position: fixed;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+  .imgpf ul {
+    width: 50%;
+  }
+  nav i,
+  span,
+  a {
+    text-align: center;
+  }
+
+  .imgpf {
+    padding: 10px;
+  }
+
+  .imgpf img {
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+  }
+  .imgpf h4 {
+    padding: 5px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  nav ul {
+    padding: 25px;
+    margin: 10px 0px 10px 0px;
+    position: relative;
+  }
+  nav ul li {
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    transition: 1s;
+  }
+
+  /*end of nav*/
+  article {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  }
+  article:hover {
+    background-color: white;
+  }
+  article h3 {
+    font-weight: 500;
+    font-style: italic;
+  }
+  article h2 {
+    font-weight: 600;
+  }
+  article p {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 30px 0px 10px 20px;
+    margin-left: 30%;
+  }
+  article p span {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 2px;
+  }
+  article p span:hover {
+    background-color: rgb(231, 227, 227);
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  article img {
+    float: left;
+    margin: 20px 0px 20px 0px;
+    width: 25%;
+    height: 25%;
+  }
+  aside {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 25px;
+    float: left;
+  }
+  aside h4 {
+    padding: 10px 0px 10px 0px;
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  aside h4 {
+    padding: 10px 0px 10px 0px;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  aside h5 {
+    padding: 10px 0px 10px 0px;
+    font-size: 0.8em;
+  }
+}
+/*--Responsive Tablet --*/
+/*--------Responsive tablet Portrait Version-------*/
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .sisikanan h4 {
+    display: none;
+  }
+
+  .midcontainer {
+    width: 100%;
+  }
+  nav {
+    width: 25%;
+    height: 100%;
+  }
+  .imgpf ul {
+    width: 50%;
+  }
+  nav i,
+  span,
+  a {
+    text-align: center;
+  }
+
+  .imgpf {
+    padding: 10px;
+  }
+
+  .imgpf img {
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+  }
+  .imgpf h4 {
+    padding: 5px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  nav ul {
+    padding: 25px;
+    margin: 10px 0px 10px 0px;
+    position: relative;
+  }
+  nav ul li {
+    margin: 10px;
+    padding: 15px;
+    font-size: 1em;
+    transition: 1s;
+  }
+
+  /*end of nav*/
+  article {
+    width: 75%;
+    height: 100%;
+    padding: 40px;
+  }
+  article:hover {
+    background-color: white;
+  }
+  article h3 {
+    font-weight: 500;
+    font-style: italic;
+  }
+  article h2 {
+    font-weight: 600;
+  }
+  article p {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 30px 0px 10px 20px;
+    margin-left: 30%;
+  }
+  article p span {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 2px;
+  }
+  article p span:hover {
+    background-color: rgb(231, 227, 227);
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  article img {
+    float: left;
+    margin: 20px 0px 20px 0px;
+    width: 25%;
+    height: 25%;
+  }
+  aside {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 25px;
+    float: left;
+  }
+  aside h4 {
+    padding: 10px 0px 10px 0px;
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  aside h4 {
+    padding: 10px 0px 10px 0px;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  aside h5 {
+    padding: 10px 0px 10px 0px;
+    font-size: 0.8em;
+  }
+  footer {
+    bottom: 0px;
+    position: relative;
+  }
+}
